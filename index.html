@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Empresa carro</title>
+</head>
+
+<body>
+  <!-- creo el main-header -->
+  <header id="main-header">
+
+    <!-- Creo el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <img src="images/logo.png" alt="logo" width="100" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-principal"></ul>
+            
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-list-nested"></i></a>
+                </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- creo el banner -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/skoda-octavia.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/vesta.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/nissan.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hyundai.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fourth slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <div class="banner-elementos">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- creo la seccion novedades -->
+  <section id="novedades" class="padded">
+    <div id="row-novedades" class="container">
+      <h1>Novedades</h1>
+      <div class="row g-0">
+        <div class="col">
+          <img src="images/thumb-zenvo.jpg" alt="" width="700px" height="400px" class="img-fluid triangulo">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis iure tempore! Quibusdam,
+            ullam tempora!</p>
+        </div>
+        <div class="col">
+          <img src="images/white.jpg" alt="" width="700px" height="400px" class="img-fluid triangulo">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis iure tempore! Quibusdam,
+            ullam tempora!</p>
+        </div>
+        <div class="col">
+          <img src="images/bmw.jpg" alt="" width="700px" height="192.500px" class="img-fluid triangulo">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero alias possimus est, corrupti eum tenetur?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <!--navigation-End-->
+<div class="content-container">
+
+  <div class="img-container">
+  <a href="#" onClick="document.getElementById('modal-wrapper').style.display='block'"><img src="images/CAR.png"></a>
+  
+  <button onClick="document.getElementById('modal-wrapper').style.display='block'"
+  ><font style="font-weight:bold">3D</font> View</button>
+  </div>
+  
+  <div class="container">
+  <h1><font color="#f44e52">911</font> Racing Car Porsche</h1>
+  <p>911 racing car powerd by porsche.This is a beautifull racing car and super fast speed</p>
+  <a href="#" class="price">$18200</a>
+  <div class="cart">
+  <select>
+  <option value="q1">1</option>
+  <option value="q2">2</option>
+  <option value="q3">3</option>
+  </select>
+  <a href="#">ADD TO CART</a>
+  
+  </div>
+  
+  
+  
+  </div>
+  
+  </div>
+  
+  <!--3d modal-->
+  
+  <div id="modal-wrapper"  class="modal">
+  <div class="center">
+  <span onClick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
+  <div class="rotation">
+  
+  
+  <img src="images/360/2.png">
+  <img src="images/360/3.png">
+  <img src="images/360/4.png">
+  <img src="images/360/5.png">
+  <img src="images/360/6.png">
+  <img src="images/360/7.png">
+  <img src="images/360/8.png">
+  <img src="images/360/9.png">
+  <img src="images/360/10.png">
+  <img src="images/360/11.png">
+  <img src="images/360/12.png">
+  <img src="images/360/13.png">
+  <img src="images/360/14.png">
+  <img src="images/360/15.png">
+  <img src="images/360/16.png">
+  <img src="images/360/17.png">
+  <img src="images/360/18.png">
+  <img src="images/360/19.png">
+  <img src="images/360/20.png">
+  <img src="images/360/21.png">
+  <img src="images/360/22.png">
+  <img src="images/360/23.png">
+  <img src="images/360/24.png">
+  <img src="images/360/25.png">
+  <img src="images/360/26.png">
+  <img src="images/360/27.png">
+  <img src="images/360/28.png">
+  <img src="images/360/29.png">
+  <img src="images/360/30.png">
+  <img src="images/360/31.png">
+  <img src="images/360/32.png">
+  <img src="images/360/33.png">
+  <img src="images/360/34.png">
+  <img src="images/360/35.png">
+  <img src="images/360/36.png">
+  <img src="images/360/37.png">
+  <img src="images/360/38.png">
+  <img src="images/360/39.png">
+  <img src="images/360/40.png">
+  <img src="images/360/41.png">
+  <img src="images/360/42.png">
+  <img src="images/360/43.png">
+  <img src="images/360/44.png">
+  <img src="images/360/45.png">
+ 
+  </div>
+  
+  </div>
+  </div>
+  
+  <script src="js/360deg.js"></script>
+
+
+
+
+
+  <!-- creo el carro de muestra -->
+  <section id="modelo-carro" class="padded">
+    <div class="container">
+      <h1>Modelos</h1>
+      <div class="row">
+        <div class="col">
+          <img src="images/hyundai-tucson.jpg" alt="" class="img-fluid imgpadded">
+          <h2>Hyundai Tucson</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi ad. Perferendis similique reiciendis
+            fugiat sint voluptas voluptatem accusamus repellat nisi ducimus eum amet possimus, fuga earum, corporis
+            autem non sit at.</p>
+          <p>Nesciunt reiciendis distinctio saepe culpa, sapiente explicabo odio sequi asperiores sint. Eius delectus,
+            tempore accusantium voluptate a nisi sint minus, ex maxime ab inventore harum autem obcaecati quos ullam
+            placeat optio? Aliquam!</p>
+        </div>
+        <div class="col">
+          <img src="images/mazda-cx.jpg" alt="" class="img-fluid imgpadded">
+          <h2>Mazda cx-5</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam adipisci dicta eos ratione maiores
+            cum, beatae ipsum ducimus est eligendi asperiores at harum deleniti quo alias eius eum suscipit quis
+            voluptates.</p>
+          <p>Placeat est fugiat accusamus nemo ex dolor numquam officia, quibusdam magnam repudiandae quo. Corrupti
+            repudiandae possimus provident iure non recusandae, est laudantium nemo aspernatur omnis molestias
+            dignissimos ad vel magni facilis amet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creo la seccion aceites-->
+  <section id="aceites" class="padded">
+    <div class="container">
+      <h1>Aceites</h1>
+      <div class="row">
+        <div class="col">
+          <img src="images/aceite.jpg" alt="" class="img-fluid imgpadded">
+          <h2>Aceite New Energy</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi ad. Perferendis similique reiciendis
+            fugiat sint voluptas voluptatem accusamus repellat nisi ducimus eum amet possimus, fuga earum, corporis
+            autem non sit at.</p>
+          <p>Nesciunt reiciendis distinctio saepe culpa, sapiente explicabo odio sequi asperiores sint. Eius delectus,
+            tempore accusantium voluptate a nisi sint minus, ex maxime ab inventore harum autem obcaecati quos ullam
+            placeat optio? Aliquam!</p>
+        </div>
+        <div class="col">
+          <img src="images/aceite_dos.jpg" alt="" class="img-fluid imgpadded">
+          <h2>Aceite Magnatec</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam adipisci dicta eos ratione maiores
+            cum, beatae ipsum ducimus est eligendi asperiores at harum deleniti quo alias eius eum suscipit quis
+            voluptates.</p>
+          <p>Placeat est fugiat accusamus nemo ex dolor numquam officia, quibusdam magnam repudiandae quo. Corrupti
+            repudiandae possimus provident iure non recusandae, est laudantium nemo aspernatur omnis molestias
+            dignissimos ad vel magni facilis amet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- creo la seccion de noticias -->
+  <section id="noticia" class="padded">
+    <div class="container">
+      <h1>Noticias</h1>
+      <div class="row">
+        <div class="col">
+          <figure><img src="" alt=""></figure>
+          <h2>El precio de la gasolina subió</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere itaque dolores beatae laboriosam, et quos
+            iusto nostrum consectetur expedita excepturi quod esse dignissimos nam, doloremque velit incidunt
+            consequatur tenetur autem aperiam hic!</p>
+        </div>
+        <div class="col">
+          <figure><img src="" alt=""></figure>
+          <h2>Como proteger bien tu auto de los robos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore unde eius obcaecati aspernatur
+            eum molestias dignissimos autem enim quo architecto cupiditate sit quasi sapiente temporibus nostrum, culpa,
+            nesciunt voluptatem in necessitatibus.</p>
+        </div>
+        <div class="col">
+          <figure><img src="" alt=""></figure>
+          <h2>Deseas adquirir una buena empresa de seguros</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut debitis provident earum, adipisci eaque
+            quisquam! Fuga dolores quaerat iusto harum, accusamus illo ut, consequuntur possimus rerum omnis placeat in
+            asperiores eum architecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="お問い合わせ" class="padded">
+    <div class="container">
+      <h1>お問い合わせ</h1>
+        <div class="ratio ratio-16x9">
+          <iframe width="700px" src="https://www.youtube.com/embed/Ckr1cAOzxm4" class="img-fluid" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+    </div>
+  </section>
+
+
+  <section id="ジェラルド" class="padded">
+    <div class="container">
+      <h1>ジェラルド</h1>
+      <div class="row">
+        <div class="col">
+          <h2>Velocidad</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quasi dolorum iusto aliquam possimus atque vero omnis. Dignissimos sunt veniam vitae deleniti, unde cum fuga quia, odio nobis dolorem reiciendis.</p>
+        </div>
+        <div class="col">
+          <h2>Astucia</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam itaque ea accusantium incidunt suscipit libero deleniti qui nisi nihil, rerum quae! Cupiditate velit repellat ullam fuga ipsum deleniti est expedita!</p>
+        </div>
+        <div class="col">
+          <h2>Habilidad</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatem ipsa natus tempora hic excepturi, temporibus quod inventore tenetur vitae? Magnam, quidem? Asperiores at natus eum dignissimos id, labore recusandae?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- creo el footer -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row row-cols-auto">
+        <div class="col">
+          <a href="#">Contactanos</a>
+        </div>
+        <div class="col">
+          <a href="https://www.facebook.com/">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.linkedin.com/">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  <!-- enlazo los js -->
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
